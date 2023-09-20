@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.belajarandroidactivity.Belajar_ScrollViewActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivBookPic2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/godzilla"
+                android:scaleType="centerCrop"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivBookPic"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/godzilla"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/bookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Godzilla King Of The Monster"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@+id/ivBookPic"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Greg Keyes"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bookTitle"
+                android:layout_toRightOf="@+id/ivBookPic"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/baseline_star_24"
+                android:backgroundTint="@color/gold"
+                android:layout_below="@+id/bookTitle"
+                android:layout_toRightOf="@+id/author"
+                android:layout_marginTop="18dp"/>
+            <TextView
+                android:id="@+id/ratting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="4.7"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bookTitle"
+                android:layout_toRightOf="@+id/star"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="9dp"
+                />
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="878 Review"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bookTitle"
+                android:layout_toRightOf="@+id/ratting"
+
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/inti"
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:layout_below="@id/ivBookPic2"
+
+
+                >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/babgenre"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+
+                            android:layout_margin="20dp"
+                            >
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+                                <Button
+                                    android:id="@+id/btn1"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:text="Fight"
+                                    android:backgroundTint="@color/gray"
+
+                                    android:textStyle="bold"
+                                    />
+                                <Button
+                                    android:id="@+id/btn2"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:text="science fiction"
+                                    android:textSize="9sp"
+                                    android:backgroundTint="@color/gray"
+                                    android:layout_toRightOf="@+id/btn1"
+                                    android:layout_marginStart="10dp"
+                                    android:textStyle="bold"
+                                    />
+                                <Button
+                                    android:id="@+id/btn3"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:textSize="12dp"
+                                    android:text="adventure"
+                                    android:backgroundTint="@color/gray"
+                                    android:layout_toRightOf="@+id/btn2"
+                                    android:layout_marginStart="10dp"
+                                    android:textStyle="bold"
+                                    />
+                            </RelativeLayout>
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/Synopsis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Synopsis"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+
+                            android:layout_below="@+id/babgenre"
+                            android:layout_marginStart="20dp"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/babSynopsis"
+                            android:layout_width="match_parent"
+                            android:layout_height="195dp"
+                            android:layout_below="@+id/Synopsis"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            >
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/synopsis" />
+
+                                </RelativeLayout>
+                            </ScrollView>
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/Review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Review"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/babSynopsis"
+                            android:layout_marginStart="20dp"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/komentar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_below="@+id/Review"
+                            >
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/pp"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        app:cardCornerRadius="10dp"
+
+                                        android:layout_marginStart="40dp"
+                                        android:layout_marginTop="10dp"
+                                        >
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/nahida"/>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bagus setiawan"
+
+                                        android:layout_toRightOf="@id/pp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginStart="10dp"
+                                        android:textStyle="bold"
+                                        />
+                                    <TextView
+                                        android:id="@+id/komentar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bagus banget Filmnya keren dan sangat menyeangkan serta sangat menghibur"
+                                        android:layout_below="@+id/pp"
+                                        android:layout_toRightOf="@id/pp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginStart="10dp"
+
+                                        />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/pp2"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_below="@+id/komentar"
+                                        android:layout_marginStart="40dp"
+                                        android:layout_marginTop="10dp"
+                                        >
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/raiden3"/>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Siti Purnamandani"
+                                        android:layout_below="@+id/komentar"
+                                        android:layout_toRightOf="@id/pp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginStart="10dp"
+                                        android:textStyle="bold"
+                                        />
+                                    <TextView
+                                        android:id="@+id/komentar3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Aduh kurang mendebarkan nih chapter kali ini, harusnya godzilanya nyerang tanpa ampun"
+                                        android:layout_below="@+id/pp2"
+                                        android:layout_toRightOf="@id/pp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginStart="10dp"
+
+                                        />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/pp3"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        app:cardCornerRadius="10dp"
+                                        android:layout_below="@+id/komentar3"
+                                        android:layout_marginStart="40dp"
+                                        android:layout_marginTop="10dp"
+                                        >
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/makima"/>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Raihana Aulia"
+                                        android:layout_below="@+id/komentar3"
+                                        android:layout_toRightOf="@id/pp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginStart="10dp"
+                                        android:textStyle="bold"
+                                        />
+                                    <TextView
+                                        android:id="@+id/komentar4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="GILAA!!! Seru Banget nih chapter kali ini sangat mendebarkan dan bikin penasaran banget sama endingnya"
+                                        android:layout_below="@+id/pp3"
+                                        android:layout_toRightOf="@id/pp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginStart="10dp"
+
+                                        />
+                                </RelativeLayout>
+                            </ScrollView>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/bukulain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Another Book"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/komentar2"
+                            android:layout_marginStart="20dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
++
+            </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/inti"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    android:text="Continue Reading"
+                    android:backgroundTint="@color/Blue"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>

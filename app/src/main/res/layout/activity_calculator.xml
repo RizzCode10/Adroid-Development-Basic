@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.belajarandroidactivity.CalculatorActivity">
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/calculator"
+        android:layout_gravity="center"
+    android:background="@color/white"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Pintar Banget"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/ank1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Angka 1"
+
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/inputank1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Angka"
+        android:inputType="number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:id="@+id/ank2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Angka 2"
+
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/inputAnk2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Angka"
+        android:inputType="number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="+"
+            android:textSize="20sp"
+            android:backgroundTint="#2E7D32"
+            android:textAllCaps="false"/>
+        />
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#7E0B0B"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+        />
+        <Button
+            android:id="@+id/btnPersen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="%"
+            android:backgroundTint="#EF6C00"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="x"
+            android:textSize="20sp"
+            android:backgroundTint="#555555"
+            android:textAllCaps="false"/>
+        />
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:text="/"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+        />
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Clear"
+            android:backgroundTint="#8E0505"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tampilkanNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Hasil"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="#FAC674"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        android:background="#FAC674"
+        >
+
+
+        <TextView
+            android:id="@+id/labelAngka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:text="0"
+
+            android:textSize="54sp" />
+    </LinearLayout>
+
+</LinearLayout>

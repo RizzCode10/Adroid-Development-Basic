@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/ivDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/swiss_destination"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switzerland"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_below="@+id/ivDestination"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLocation"
+                android:textSize="14dp"
+                android:text="Amazing View Canbe enjoyed from above of refreshing cinty"
+                android:layout_marginStart="15dp"
+                />
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/baseline_location_on_24"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/nameLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switzerland"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/lblPrice"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/baseline_price_check_24"
+                android:layout_below="@+id/tvDescription"
+
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/namePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switzerland"
+                android:layout_below="@+id/tvDescription"
+                android:layout_toRightOf="@+id/lblPrice"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:text="Plan Trip Now"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

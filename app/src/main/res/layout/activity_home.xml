@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen3"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngopi Yuk"
+        android:textColor="#814310"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="455dp"
+        android:gravity="center"
+        >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C88C41"
+        android:text="Open"
+        android:textColor="@color/white"
+        android:layout_marginEnd="10sp"
+        app:icon="@drawable/arrow"
+        app:iconTint="@color/white"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BF6900"
+        android:textColor="@color/white"
+        android:text="Share"
+        app:icon="@drawable/share"
+        app:iconTint="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>
